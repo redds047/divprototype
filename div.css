@@ -1,0 +1,183 @@
+
+
+body {
+  background: #111; 
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.board {
+  display: grid;
+  width: 100vw;   
+  height: 100vh;  
+  grid-template-columns: repeat(10, 1fr); 
+  grid-template-rows: repeat(10, 1fr);    
+  gap: 10px;      
+  background: #222; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+
+.tile {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: 2px solid white; 
+}{
+  box-sizing: border-box;
+}
+
+
+h1 {
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+
+
+
+.solid {
+  background: #ffffff;
+}
+
+
+.fragile {
+  background: #ffd6d6;
+  border: 2px dashed #ff6b6b;
+}
+
+
+.loud {
+  background: #ffbe0b;
+  box-shadow: 0 0 20px #ffbe0b;
+}
+
+
+.hollow {
+  background: transparent;
+  border: 2px solid white;
+}
+
+
+.heavy {
+  background: #6c757d;
+  box-shadow: inset 0 -6px 0 rgba(0,0,0,0.4);
+}
+
+
+.soft {
+  background: #ffc8dd;
+  border-radius: 50%;
+}
+
+
+.glitch {
+  background: linear-gradient(45deg, #8338ec, #3a86ff);
+}
+
+
+.warning {
+  background: repeating-linear-gradient(
+    45deg,
+    #ff006e,
+    #ff006e 10px,
+    #000 10px,
+    #000 20px
+  );
+}
+
+
+.muted {
+  background: #495057;
+  opacity: 0.6;
+}
+
+
+.sharp {
+  background: #adb5bd;
+  border-radius: 0;
+}
+
+
+.invisible {
+  background: transparent;
+}
+
+
+.pulse {
+  background: #ff5d8f;
+  outline: 3px solid rgba(255,93,143,0.4);
+}
+
+.stacked {
+  background: #4cc9f0;
+  box-shadow: 6px 6px 0 #4361ee;
+}
+
+.blocked {
+  background: #212529;
+  border: 2px solid red;
+}
+
+.stretched {
+  background: #90dbf4;
+  transform: scaleX(1.2);
+}
+
+
+.broken {
+  background: #f1faee;
+  clip-path: polygon(0 0, 100% 0, 80% 60%, 0 100%);
+}
+
+
+.outlined {
+  background: none;
+  outline: 3px solid #00f5d4;
+}
+
+.sticky {
+  background: #cdb4db;
+  filter: blur(0.5px);
+}
+
+
+.cold {
+  background: #caf0f8;
+}
+
+
+.hot {
+  background: #e63946;
+}
+
+
+.empty {
+  background: none;
+  border: 1px dotted #666;
+}
+
+.dense {
+  background: #000;
+}
+
+
+.floating {
+  background: #bde0fe;
+  transform: translateY(-6px);
+}
+
+
+.compressed {
+  background: #adb5bd;
+  transform: scaleY(0.7);
+}
+
+.core {
+  background: radial-gradient(circle, #fff 20%, #000 70%);
+}
